@@ -1,0 +1,13 @@
+name : Orange County DevOps Website 
+brand : Orange County DevOps 
+description : This is the website for the Orange County DevOps Meetup Group 
+keyword : 
+url : http://oc-devops.github.io/
+email : chris@nebulaworks.com 
+twitter : chrisciborowski
+github : chrisciborowski
+author : Chris Ciborowski 
+year : 2017
+markdown : kramdown
+exclude :
+  - node_modules

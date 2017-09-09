@@ -1,1 +1,2 @@
-# oc-devops.github.io
+# Orange County DevOps Website
+www.ocdevops.org
