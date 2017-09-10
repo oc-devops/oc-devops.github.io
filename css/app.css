@@ -387,7 +387,7 @@ html {
 body {
   padding: 0;
   margin: 0;
-  font-family: "Raleway", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Lato", "Raleway", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   line-height: 1.5;
   color: #0a0a0a;
@@ -1235,7 +1235,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Lato", "Raleway", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
   color: inherit;
@@ -1664,10 +1664,6 @@ textarea {
 
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
-  color: #cacaca; }
-
-input::-moz-placeholder,
-textarea::-moz-placeholder {
   color: #cacaca; }
 
 input:-ms-input-placeholder,
@@ -4100,6 +4096,34 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 80%; }
 
 .title-bar {
-  box-shadow: 0 0 10px rgba(138, 138, 138, 0.3); }
+  box-shadow: 0 0 10px rgba(138, 138, 138, 0.3);
+  background: #1977C4; }
   .title-bar .title-bar-title {
     font-weight: 800; }
+
+.title-bar-right .menu li a {
+  color: #FFFFFF; }
+
+.title-bar-right .menu li a:hover {
+  color: #A5FFF4; }
+
+.title-bar-right .menu-icon {
+  color: #FFFFFF; }
+
+.off-canvas {
+  background: #b7b7b7; }
+
+.off-canvas .menu li a {
+  color: #FFFFFF; }
+
+.off-canvas .menu li a:hover {
+  color: #A5FFF4; }
+
+a {
+  color: #15D3CD; }
+
+a:hover {
+  color: #0e8783; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300; }

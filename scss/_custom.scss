@@ -33,11 +33,39 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 800;
   }
 }
-.title-bar-right {
-  .a {
-    color: #ffffff;
-  }
-  .a:hover {
-    color: #A5FFF4;
-  }
+// .title-bar-right a {
+//   color: #FFFFFF;
+// }
+// .title-bar-right a:hover {
+//   color: #A5FFF4;
+// }
+// .title-bar-right .menu-icon {
+//   color: #FFFFFF;
+// }
+.title-bar-right .menu li a {
+  color: #FFFFFF;
+}
+.title-bar-right .menu li a:hover {
+  color: #A5FFF4;
+}
+.title-bar-right .menu-icon {
+  color: #FFFFFF;
+}
+.off-canvas {
+  background: #b7b7b7;
+}
+.off-canvas .menu li a {
+  color: #FFFFFF;
+}
+.off-canvas .menu li a:hover {
+  color: #A5FFF4;
+}
+a {
+  color: #15D3CD;
+}
+a:hover {
+  color: #0e8783;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-weight: 300;
 }
