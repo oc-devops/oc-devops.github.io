@@ -1,10 +1,12 @@
 //Meetup URL getting events 1 month back and 1 month forward
-var meetup_url= "https://api.meetup.com/2/events?offset=0&format=json&limited_events=False&group_urlname=orange-county-devops-group&photo-host=public&time=-2m%2C2m&page=500&fields=&order=time&status=upcoming%2Cpast&desc=desc&sig_id=144768332&sig=e9769088429d5e7ed1c5683adc1f069071937a55";
+var meetup_url= "https://api.meetup.com/2/events?offset=0&format=json&limited_events=False&group_urlname=orange-county-devops-group&photo-host=public&time=-2m%2C2m&page=500&fields=&order=time&callback=?&status=upcoming%2Cpast&desc=desc&sig_id=144768332&sig=e9769088429d5e7ed1c5683adc1f069071937a55";
 
 $.getJSON(meetup_url,
 function (data) {
 	//check and assign next and past meeting object, start with newest object and iterate through.
 
+  // var next_meeting = data.results[0]; //object
+	// var last_meeting = data.results[0];
 	var next_meeting; //object
 	var last_meeting;
 	for (var i=0; i<data.results.length; i++){
@@ -15,17 +17,18 @@ function (data) {
 		}
 	}
 
-
 	//Check if no description
 	if (typeof next_meeting.description === "undefined"){
 	next_meeting.description = "We are putting something special together for the next meeting. Check back soon for more details.";
 	}
-// 	if (typeof last_meeting.description === "undefined"){
-// 	last_meeting.description = "We are putting something special together for the next meeting. Check back soon for more details.";
-// 	}
-// 	else {
-// 	last_meeting.description = last_meeting.description.substring(0,400)+'...';
-// }
+  if (typeof last_meeting.description === "undefined"){
+  last_meeting.description = "We are putting something special together for the next meeting. Check back soon for more details.";
+  }
+  else {
+  last_meeting.description = last_meeting.description.substring(0,400)+'...';
+  }
+
+
 	//Format date for last and next meeting
 	nextdate = new Date((next_meeting.time)).toString();
 	nextdateString = nextdate.toString();
