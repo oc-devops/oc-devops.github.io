@@ -21,13 +21,15 @@ function (data) {
 	if (typeof next_meeting.description === "undefined"){
 	next_meeting.description = "We are putting something special together for the next meeting. Check back soon for more details.";
 	}
+
+/*
   if (typeof last_meeting.description === "undefined"){
   last_meeting.description = "We are putting something special together for the next meeting. Check back soon for more details.";
   }
   else {
   last_meeting.description = last_meeting.description.substring(0,400)+'...';
   }
-
+*/
 
 	//Format date for last and next meeting
 	nextdate = new Date((next_meeting.time)).toString();
