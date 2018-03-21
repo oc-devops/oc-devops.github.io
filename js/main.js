@@ -5,8 +5,6 @@ $.getJSON(meetup_url,
 function (data) {
 	//check and assign next and past meeting object, start with newest object and iterate through.
 
-  // var next_meeting = data.results[0]; //object
-	// var last_meeting = data.results[0];
 	var next_meeting; //object
 	var last_meeting;
 	for (var i=0; i<data.results.length; i++){
