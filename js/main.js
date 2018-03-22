@@ -1,5 +1,5 @@
 //Meetup URL getting events 1 month back and 1 month forward
-var meetup_url= "https://api.meetup.com/2/events?offset=0&format=json&limited_events=False&group_urlname=orange-county-devops-group&callback=%3F&photo-host=public&time=-6m%2C2m&page=500&fields=&order=time&status=upcoming%2Cpast&desc=desc&sig_id=144768332&sig=ad8146f95941e5990c2a209c4891c30afef178d0";
+var meetup_url= "https://api.meetup.com/2/events?offset=0&format=json&limited_events=False&group_urlname=orange-county-devops-group&callback=&photo-host=public&time=-6m%2C2m&page=500&fields=&order=time&status=upcoming%2Cpast&desc=desc&sig_id=144768332&sig=ad8146f95941e5990c2a209c4891c30afef178d0";
 
 $.getJSON(meetup_url,
 function (data) {
